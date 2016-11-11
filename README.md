@@ -1,2 +1,0 @@
-# zhangcuiZC.github.io
-mypage

@@ -1,0 +1,48 @@
+
+#home{
+	padding-top: 20%;
+	padding-bottom: 20%;
+	
+}
+#about,#portfolio,#contact{
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+#home h3{
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 10px;
+}
+#home h1,#home h3{
+	color: #fff;
+}
+#home button{
+	margin: 20px 5px 20px 5px;
+}
+#bottombar{
+	background-color: #ddd;
+}
+
+#bottombar div{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#homecontainer{
+	background-color: #707;
+}
+#aboutcontainer{
+	background-color: #cc0;
+}
+#portfoliocontainer{
+	background-color: #0cc;
+}
+#contactcontainer{
+	background-color: #ccd;
+}
+.caption{
+	background-color: #ccc;
+}
+.homebutton li{
+	margin-top: 20px;
+}
