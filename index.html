@@ -5,10 +5,12 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/animate.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="scripts/jquery.js"></script>
 	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-	<script type="text/javascript" src="scripts/navcolor.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/wow.js"></script>
 
 </head>
 <body>
@@ -37,46 +39,40 @@
 <!-- 导航栏结束 -->
 <!-- Home开始 -->
 	<div class="container-fluid" id="homecontainer">
-		<div id="home" class="container">
+		<div id="home" class="container animated wow fadeInDown">
 			<h1 class="text-center">ZhangCui 的前端之路</h1>
 			<h3 class="text-center">I wanna try even though I could fail.</h3>
-			
-			<!-- <div class="text-center">
-				<button class="btn btn-primary">Twitter</button>
-				<button class="btn btn-primary">Github</button>
-				<button class="btn btn-primary">LinkedIn</button>
-				<button class="btn btn-primary">freeCodeCamp</button>
-			</div> -->
 			<ul class="list-inline text-center homebutton">
 	            <li>
-	                <a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
+	                <a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-weibo fa-fw"></i>weibo</a>
 	            </li>
 	            <li>
 	                <a href="https://github.com/zhangcuiZC" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a>
 	            </li>
 	            <li>
-	                <a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-linkedin fa-fw"></i>Linkedin</a>
+	                <a href="http://www.cnblogs.com/zczhangcui/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-bold fa-fw"></i>Myblog</a>
 	            </li>
 	            <li>
 	                <a href="https://freecodecamp.cn/zhangcuizc" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>freeCodeCamp</a>
 	            </li>
 	        </ul>
 		</div>
+		<div class="shadow"></div>
 	</div>
 <!-- Home结束 -->
 <!-- About开始 -->
 	<div class="container-fluid" id="aboutcontainer">
 		<div id="about" class="container">
-			<div class="row">
+			<div class="row animated wow fadeInDown">
 				<div class="col-md-7 col-md-offset-1">
 					<h2>ZhangCui的前端之路</h2>
-					<p>本人(男)目前是中国石油大学（北京）的一名在读研究生，由于石油行业的不景气和自己对计算机的兴趣，毅然进入了前端的大门，是时候遵从自己的本心了，也许会有挫折，也许会有痛苦，但既然选择了远方，便只顾风雨兼程。</p>
+					<p>本人(男)目前是中国石油大学（北京）的一名在读研究生，由于对计算机的兴趣，毅然进入了前端的大门，是时候遵从自己的本心了，也许会有挫折，也许会有痛苦，但既然选择了远方，便只顾风雨兼程。</p>
 					<h3>目前的学习内容：</h3>
 					<ul>
-						<li>目前正在自学《计算机科学导论》补充计算机基础知识；</li>
+						<li>目前正在自学《计算机科学导论》等计算机基础知识；</li>
 						<li>在freeCodeCamp上进行前端的项目练习，包括网页设计及JS算法等；</li>
 						<li>对JSON及AJAX进行进一步的学习；</li>
-						<li>准备下一阶段进行Vue.js和AngularJS的学习；</li>
+						<li>正在钻研《JavaScript高级程序设计》；</li>
 						<li>根据学习进度，完善已有的几个个人项目；</li>
 						<li>希望能找到一个实习工作，通过实习接触到相关项目和行业大牛以得到学习和提升的机会。</li>
 					</ul>
@@ -91,8 +87,8 @@
 <!-- Portfolio开始 -->
 	<div class="container-fluid" id="portfoliocontainer">
 		<div id="portfolio" class="container">
-			<h2 class="text-center">个人项目</h2>
-			<h3 class="text-center">以下是近期主要的工作内容</h3>
+			<h2 class="text-center animated wow fadeInDown">个人项目</h2>
+			<h3 class="text-center animated wow fadeInDown">近期主要的工作内容</h3>
 			<div class="row">
 				<div class="col-md-4 col-sm-6">
 					<div class="thumbnail">
@@ -160,14 +156,14 @@
 		<div id="contact" class="container">
 			<div class="row">
 				<div class="col-md-7 col-md-offset-1">
-					<h2>欢迎与我联系！</h2>
-					<h3><i class="fa fa-envelope"></i> zczhangcui@foxmail.com</h3>
+					<h2 class="animated wow fadeInDown">欢迎与我联系！</h2>
+					<h3 class="animated wow fadeInDown"><i class="fa fa-envelope"></i> zczhangcui@foxmail.com</h3>
 				</div>
 				<div class="col-md-3 col-md-offset-1">
 					<!-- <div class="container-fluid well"> -->
-						<a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-twitter fa-fw"></i>Twitter</a><br><br>
+						<a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-weibo fa-fw"></i>weibo</a><br><br>
 						<a href="https://github.com/zhangcuiZC" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a><br><br>
-						<a href="#" class="btn btn-default btn-lg disabled"><i class="fa fa-linkedin fa-fw"></i>LinkedIn</a><br><br>
+						<a href="http://www.cnblogs.com/zczhangcui/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-bold fa-fw"></i>Myblog</a><br><br>
 						<a href="https://freecodecamp.cn/zhangcuizc" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>freeCodeCamp</a><br><br>
 					<!-- </div> -->
 				</div>
