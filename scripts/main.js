@@ -13,10 +13,10 @@ $(function () {
 		$(this).removeClass('animated pulse')
 	});
 
-	$(".thumbnail a").hover(function() {
-		$(this).parent(".thumbnail").addClass('animated pulse');
-	}, function() {
-		$(this).parent(".thumbnail").removeClass('animated pulse');
-	});
+	// $(".thumbnail a").hover(function() {
+	// 	$(this).parent(".thumbnail").addClass('animated pulse');
+	// }, function() {
+	// 	$(this).parent(".thumbnail").removeClass('animated pulse');
+	// });
 })
 
