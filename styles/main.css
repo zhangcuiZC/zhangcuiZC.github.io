@@ -1,7 +1,7 @@
 body{
 	font-family: "微软雅黑";
 	color: #444;
-	background: url(http://i1.piimg.com/580038/30bad48feb1b7e40.jpg) no-repeat center top;
+	background: url(../images/bg.jpg) no-repeat center top;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
