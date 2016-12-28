@@ -1,4 +1,14 @@
 $(function () {
+	function loading(){
+		$(".loading h1").animate({fontSize:'4em'}, 2500 ,function(){
+			$(this).animate({fontSize:'3em'}, 2500);
+		});
+	}
+	loading();
+	var loadtimer=setInterval(function(){
+		loading();
+	},5200);
+
 	new WOW().init();
 
 	var navtimer=null;
@@ -47,7 +57,15 @@ $(function () {
 		}
 	});
 
+	//触发scroll事件
 	$(window).trigger('scroll');
+	//设置loading层的高度
+	$(".loading").css('height', $("body").height());
+
 
 });
-
+//完全加载后取消loading层
+window.onload=function() {
+	$(".loading").fadeOut(400);
+	clearInterval(loadtimer);
+};

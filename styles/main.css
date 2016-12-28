@@ -103,3 +103,15 @@ h1,h3{
 .active.focus {
     outline: none !important;          
 }
+.loading{
+	position: absolute;
+	z-index: 2000;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+.loading h1{
+	position: fixed;
+	width: 100%;
+	top: 100px;
+	color: #f77;
+}
