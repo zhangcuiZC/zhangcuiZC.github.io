@@ -115,3 +115,9 @@ h1,h3{
 	top: 100px;
 	color: #f77;
 }
+.loading h5{
+	position: fixed;
+	width: 100%;
+	top: 180px;
+	color: #f77;
+}
