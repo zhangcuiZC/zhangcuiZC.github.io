@@ -95,6 +95,9 @@ $(function () {
 	//**************以上为加载页面的相关设置
 
 	//点击加载页面的按钮后关闭加载页面
+	loadtimer=setTimeout(function(){
+		$(".loading .btn").show();
+	},2000);
 	$(".loading .btn").click(closeloading);
 
 });
@@ -102,6 +105,7 @@ $(function () {
 //完全加载后取消loading层
 window.onload=closeloading;
 function closeloading(){
+	clearTimeout(loadtimer);
 	new WOW().init();
 	a.stop();
 	$(".loading").fadeOut(400);

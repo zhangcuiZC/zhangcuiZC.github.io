@@ -38,7 +38,9 @@ h1,h3{
 	padding-bottom: 40px;
 }
 #bottombar p{
+	font-size: 12px;
 	color: #ccc;
+	text-indent: 0;
 }
 #aboutcontainer,#portfoliocontainer,#contactcontainer{
 	min-height: 100%;
@@ -106,7 +108,7 @@ h1,h3{
     outline: none !important;          
 }
 .loading{
-	position: absolute;
+	position: fixed;
 	z-index: 2000;
 	width: 100%;
 	background-color: rgba(0,0,0,1);
@@ -127,4 +129,5 @@ h1,h3{
 	font-size: 12px;
 	margin-top: 50px;
 	background-color: #f77;
+	display: none;
 }
