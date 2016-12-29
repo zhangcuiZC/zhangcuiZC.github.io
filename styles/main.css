@@ -2,7 +2,6 @@ body{
 	font-family: "微软雅黑";
 	color: #eee;
 	background: url(../images/bg.jpg) no-repeat center center;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	overflow: hidden;

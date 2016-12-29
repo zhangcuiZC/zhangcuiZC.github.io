@@ -7,6 +7,12 @@ $(function () {
 		$("html,body").animate({scrollTop:$(txt).offset().top}, 400);
 		return false;
 	});
+	
+	var width=$(window).width();
+	var height=$(window).height();
+	if (height>width) {
+		$("body").css('backgroundSize', "auto "+height+"px");
+	}
 
 	//屏幕滚动事件
 	$(window).scroll(function() {
