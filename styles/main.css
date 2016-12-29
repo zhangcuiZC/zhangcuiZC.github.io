@@ -43,9 +43,11 @@ h1,h3{
 	text-indent: 0;
 }
 #aboutcontainer,#portfoliocontainer,#contactcontainer{
-	min-height: 100%;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
 	color: #eee;
+}
+#aboutcontainer{
+	background: linear-gradient(transparent,rgba(0,0,0,0.4));
 }
 .thumbnail{
 	background-color: transparent;
