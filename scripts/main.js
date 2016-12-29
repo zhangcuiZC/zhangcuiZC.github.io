@@ -1,5 +1,7 @@
 $(function () {
 	var navtimer=null;
+	var loadtimer=null;
+	var a=null;
 	//导航栏点击事件
 	$(".nav").on('click', 'a', function(event) {
 		var that=$(this);
@@ -7,12 +9,6 @@ $(function () {
 		$("html,body").animate({scrollTop:$(txt).offset().top}, 400);
 		return false;
 	});
-	
-	var width=$(window).width();
-	var height=$(window).height();
-	if (height>width) {
-		$("body").css('backgroundSize', "auto "+height+"px");
-	}
 
 	//屏幕滚动事件
 	$(window).scroll(function() {
@@ -106,14 +102,15 @@ $(function () {
 	},2000);
 	$(".loading .btn").click(closeloading);
 
+
 });
 
 //完全加载后取消loading层
-window.onload=closeloading;
 function closeloading(){
-	clearTimeout(loadtimer);
 	new WOW().init();
-	a.stop();
 	$(".loading").fadeOut(400);
 	document.getElementsByTagName('body')[0].style.overflow="visible";
 }
+window.onload=closeloading;
+
+
