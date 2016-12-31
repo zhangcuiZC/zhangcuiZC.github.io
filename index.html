@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/loading.css">
 	<link rel="stylesheet" type="text/css" href="styles/animate.css">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href="images/icon.ico">
@@ -13,15 +14,18 @@
 	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 	<script type="text/javascript" src="scripts/sonic.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/loading.js"></script>
 	<script type="text/javascript" src="scripts/wow.js"></script>
-
 </head>
 <body>
+<!-- loading界面开始 -->
+<!-- loading界面需要loading.css/loading.js/sonic.js -->
 	<div class="loading text-center">
 		<div class="text-center" id="canvascontainer"></div>
 		<h6 class="text-center dot">加载背景图，首次加载较慢</h6>
 		<button class="btn btn-default btn-lg animated bounceInDown">"没背景就没背景吧"</button>
 	</div>
+<!-- loading界面结束 -->
 <!-- 导航栏开始 -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		    <div class="container">
@@ -50,7 +54,7 @@
 		<div id="home" class="container animated wow zoomIn">
 			<h1 class="text-center">ZhangCui  前端之路</h1>
 			<h3 class="text-center">I wanna try even though I could fail.</h3>
-			<ul class="list-inline text-center homebutton">
+			<ul class="list-inline text-center">
 	            <li>
 	                <a href="https://github.com/zhangcuiZC" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a>
 	            </li>
@@ -58,7 +62,7 @@
 	                <a href="http://www.cnblogs.com/zczhangcui/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-bold fa-fw"></i>Myblog</a>
 	            </li>
 	            <li>
-	                <a href="https://freecodecamp.cn/zhangcuizc" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>freeCodeCamp</a>
+	                <a href="https://freecodecamp.cn/zhangcuizc" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>FreeCodeCamp</a>
 	            </li>
 	        </ul>
 		</div>
@@ -167,7 +171,7 @@
 				<div class="col-md-3 col-md-offset-1">
 					<a href="https://github.com/zhangcuiZC" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>Github</a><br><br>
 					<a href="http://www.cnblogs.com/zczhangcui/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-bold fa-fw"></i>Myblog</a><br><br>
-					<a href="https://freecodecamp.cn/zhangcuizc" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>freeCodeCamp</a><br><br>
+					<a href="https://freecodecamp.cn/zhangcuizc" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i>FreeCodeCamp</a><br><br>
 				</div>
 			</div>
 		</div>

@@ -9,28 +9,42 @@ body{
 p{
 	text-indent: 2em;
 }
-h1,h3{
-	text-shadow: 0 0 1px #000;
+h1,h2,h3{
+	text-shadow: 0 0 2px #000;
 }
+/*以下--各部分布局及背景*/
 #home{
 	padding-top: 20%;
 	padding-bottom: 20%;
-	z-index: 999;
 }
 #about,#portfolio,#contact{
 	padding-top: 10%;
 	padding-bottom: 5%;
 }
+#aboutcontainer,#portfoliocontainer,#contactcontainer{
+	background-color: rgba(0,0,0,0.4);
+	color: #eee;
+}
+#aboutcontainer{
+	background: linear-gradient(transparent,rgba(0,0,0,0.4));
+}
+#bottombar{
+	background-color: rgba(0,0,0,0.6);
+}
+/*以下--各部分详细声明*/
 #home h3{
 	padding-bottom: 20px;
 	border-bottom: 2px solid #555;
 	margin-bottom: 10px;
 }
-#home button{
+#home .btn{
 	margin: 20px 5px 20px 5px;
 }
-#bottombar{
-	background-color: rgba(0,0,0,0.6);
+#about *{
+	line-height: 2em;
+}
+#portfolio h3{
+	margin-bottom: 2%;
 }
 #bottombar div{
 	padding-top: 40px;
@@ -41,13 +55,7 @@ h1,h3{
 	color: #ccc;
 	text-indent: 0;
 }
-#aboutcontainer,#portfoliocontainer,#contactcontainer{
-	background-color: rgba(0,0,0,0.4);
-	color: #eee;
-}
-#aboutcontainer{
-	background: linear-gradient(transparent,rgba(0,0,0,0.4));
-}
+/*以下--各项目样式声明*/
 .thumbnail{
 	background-color: transparent;
 	border: 1px solid #888;
@@ -69,20 +77,13 @@ h1,h3{
 	white-space: nowrap;
 	overflow: hidden;
 }
-.homebutton li{
-	margin-top: 20px;
-}
-#about *{
-	line-height: 2em;
-}
-#portfolio h3{
-	margin-bottom: 2%;
-}
+/*以下--按钮通用样式*/
 .btn,.btn:focus{
 	border-radius: 4px;
 	background-color: rgba(0,0,0,0.4);
 	color: #fff;
 	transition: 0.5s;
+	font-weight: 300;
 }
 .btn:hover{
 	box-shadow: 3px 3px 5px #222;
@@ -90,6 +91,7 @@ h1,h3{
 	background-color: #f77;
 	color: #fff;
 }
+/*以下--顶部导航栏样式*/
 .navbar{
 	background-color: rgba(0,0,0,0.2);
 	border: none;
@@ -112,111 +114,3 @@ h1,h3{
 .active.focus {
     outline: none !important;          
 }
-.loading{
-	position: fixed;
-	z-index: 2000;
-	width: 100%;
-	height: 100%;
-	background-color: #000;
-}
-.loading h6{
-	width: 100%;
-	margin-top: 30px;
-	color: #ccc;
-}
-.loading #canvascontainer{
-	width: 100px;
-	height: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10%;
-}
-.loading .btn{
-	font-size: 12px;
-	margin-top: 50px;
-	display: none;
-}
-/*以下是三个点需要用的部分*/
-.dot:after{
-	content: ".";
-	display: inline-block;
-	width: 2em;
-	text-indent: -0.5em;
-	overflow: hidden;
-	vertical-align: bottom;
-	-webkit-animation: dotting 5s infinite;
-	-o-animation: dotting 5s infinite;
-	-moz-animation: dotting 5s infinite;
-	animation: dotting 5s infinite;
-	text-align: left;
-}
-
-@keyframes dotting{
-	0%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-	25%{
-		text-shadow: 0.7em 0 0 currentColor;
-	}
-	50%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor;
-	}
-	75%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor,1.9em 0 0 currentColor;
-	}
-	100%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-}
-@-webkit-keyframes dotting{
-	0%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-	25%{
-		text-shadow: 0.7em 0 0 currentColor;
-	}
-	50%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor;
-	}
-	75%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor,1.9em 0 0 currentColor;
-	}
-	100%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-}
-@-o-keyframes dotting{
-	0%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-	25%{
-		text-shadow: 0.7em 0 0 currentColor;
-	}
-	50%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor;
-	}
-	75%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor,1.9em 0 0 currentColor;
-	}
-	100%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-}
-@-moz-keyframes dotting{
-	0%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-	25%{
-		text-shadow: 0.7em 0 0 currentColor;
-	}
-	50%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor;
-	}
-	75%{
-		text-shadow: 0.7em 0 0 currentColor,1.3em 0 0 currentColor,1.9em 0 0 currentColor;
-	}
-	100%{
-		text-shadow: 0em 0 0 currentColor;
-	}
-}
-/*以上是三个点需要用的部分*/
