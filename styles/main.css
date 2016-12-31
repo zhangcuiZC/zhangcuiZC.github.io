@@ -64,6 +64,11 @@ h1,h3{
 	background-color: rgba(0,0,0,0.4);
 	color: #eee !important;
 }
+.caption h5,.caption h6{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
 .homebutton li{
 	margin-top: 20px;
 }
