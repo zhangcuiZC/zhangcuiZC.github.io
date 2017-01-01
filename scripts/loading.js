@@ -60,6 +60,10 @@ $(function(){
 function closeloading(){
 	new WOW().init();
 	$(".loading").fadeOut(400);
+	$("#portfolio img").each(function() {
+		var thisimg=$(this);
+		thisimg.attr('src', thisimg.attr('data-src'));
+	});
 	document.getElementsByTagName('body')[0].style.overflow="visible";
 }
 window.onload=closeloading;
