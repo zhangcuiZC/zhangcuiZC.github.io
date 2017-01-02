@@ -76,6 +76,8 @@ h1,h2,h3{
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	line-height: 1.2;
+	margin: 7px 0;
 }
 /*以下--按钮通用样式*/
 .btn,.btn:focus{
